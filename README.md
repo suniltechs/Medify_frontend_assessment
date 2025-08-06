@@ -1,6 +1,6 @@
 # 🎬 MovieFinder - Your Ultimate Movie Discovery App
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Click_Here!-brightgreen?style=for-the-badge&logo=vercel)](https://suniltechs.github.io/movie-finder)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Click_Here!-brightgreen?style=for-the-badge&logo=vercel)](https://suniltechs.github.io/Medify_frontend_assessment/)
 
 <img src="./App Screenshots/1.png">
 
