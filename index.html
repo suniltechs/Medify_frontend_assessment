@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieFinder - Discover Your Next Favorite Film</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Movie<span>Finder</span></a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#search">Search</a>
+          <a href="#trending">Trending</a>
+          <a href="#about">About</a>
+        </div>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="#home">Home</a>
+      <a href="#search">Search</a>
+      <a href="#trending">Trending</a>
+      <a href="#about">About</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <h1>Discover Your Next Favorite Film</h1>
+        <p>
+          Search through thousands of movies and find detailed information about
+          each one.
+        </p>
+        <a href="#search" class="btn">Start Searching</a>
+      </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="search-section">
+      <div class="container">
+        <div class="search-header">
+          <h2>Discover Movies</h2>
+          <p class="subtitle">
+            Search through thousands of movies from all genres and eras
+          </p>
+        </div>
+
+        <div class="modern-search-container">
+          <div class="search-bar-wrapper">
+            <div class="search-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <input
+              type="text"
+              id="query"
+              placeholder="Search for movies..."
+              autocomplete="off"
+            />
+            <button id="searchBtn" class="modern-search-btn">
+              <span>Search</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="search-filters">
+            <div class="filter-chip active" data-filter="all">All</div>
+            <div class="filter-chip" data-filter="movie">Movies</div>
+            <div class="filter-chip" data-filter="series">TV Series</div>
+            <div class="filter-chip" data-filter="game">Games</div>
+          </div>
+        </div>
+
+        <div class="search-meta">
+          <div id="results-info" class="results-info"></div>
+          <div class="sort-options">
+            <select id="sortBy">
+              <option value="relevance">Relevance</option>
+              <option value="year">Newest First</option>
+              <option value="year_oldest">Oldest First</option>
+              <option value="rating">Highest Rated</option>
+              <option value="title">A-Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="movies" class="movies-grid"></div>
+
+        <div class="load-more-container">
+          <button id="loadMoreBtn" class="load-more-btn" style="display: none">
+            Load More
+            <i
+              class="fas fa-spinner fa-spin loading-spinner"
+              style="display: none"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section id="trending" class="trending-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Trending Now</h2>
+          <p class="section-subtitle">
+            Explore the most popular movies of all time
+          </p>
+        </div>
+
+        <div class="trending-container">
+          <div id="trending-movies" class="trending-movies"></div>
+          <div class="carousel-controls">
+            <button class="carousel-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-dots"></div>
+            <button class="carousel-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About MovieFinder</h2>
+            <p class="lead">Your ultimate guide to the world of cinema</p>
+            <p>
+              MovieFinder is a web application that allows you to search for
+              movies and view detailed information about them. We use the OMDb
+              API to provide accurate and up-to-date movie data.
+            </p>
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <h3>Easy Search</h3>
+                <p>
+                  Find any movie with our powerful search engine and filters
+                </p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-info-circle"></i>
+                </div>
+                <h3>Detailed Info</h3>
+                <p>Get comprehensive details about every movie in one place</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Fully Responsive</h3>
+                <p>Works perfectly on all devices from desktop to mobile</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>User Ratings</h3>
+                <p>See what other users think with live ratings and reviews</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://i.pinimg.com/1200x/42/00/da/4200dae9ac7b15a5c65375cbfaceaa69.jpg"
+              alt="Movie theater"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>Developed by <a href="https://www.linkedin.com/in/sunil-sowrirajan-40548826b/"><span style="color: red;">Sunil Sowrirajan</span></a>. Data provided by the OMDb API.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/sunil-sowrirajan-40548826b/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/suniltechs"><i class="fab fa-github"></i></a>
+          <a href="https://sunilsowrirajan.netlify.app/"><i class="fa-solid fa-user-tie"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Movie Modal -->
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
