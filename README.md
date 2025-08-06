@@ -1,9 +1,8 @@
 # 🎬 MovieFinder - Your Ultimate Movie Discovery App
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Click_Here!-brightgreen?style=for-the-badge&logo=vercel)](https://suniltechs.github.io/movie-finder)
-[![GitHub Stars](https://img.shields.io/github/stars/suniltechs/movie-finder?style=social)](https://github.com/suniltechs/movie-finder/stargazers)
 
-![MovieFinder Hero Banner](https://i.pinimg.com/1200x/42/00/da/4200dae9ac7b15a5c65375cbfaceaa69.jpg)
+<img src="./App Screenshots/1.png">
 
 A modern, responsive web application for discovering movies with beautiful UI and seamless experience powered by OMDb API.
 
@@ -32,21 +31,29 @@ A modern, responsive web application for discovering movies with beautiful UI an
 ## 🚀 Quick Start
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/suniltechs/movie-finder.git
-   cd movie-finder
-   ```
+```bash
+git clone https://github.com/suniltechs/medify_frontend_assessment.git
+cd medify_frontend_assessment
+```
 2. **Get API Key**
-   - Register at OMDb API
-   - Add your key in app.js:
-     ```
-     const API_KEY = "your_api_key_here"; // 🔑 Add your key here
-     ```
+- Register at OMDb API
+- Add your key in app.js:
+```
+const API_KEY = "your_api_key_here"; // 🔑 Add your key here
+```
 3. **Launch the app**
-   - Simply open index.html in your browser
+- Simply open index.html in your browser
 
 ## 📸 App Screenshots
-  <div align="center"> <img src="assets/desktop-view.png" width="45%" alt="Desktop View"> <img src="assets/mobile-view.png" width="45%" alt="Mobile View"> <img src="assets/search-results.png" width="45%" alt="Search Results"> <img src="assets/movie-details.png" width="45%" alt="Movie Details"> </div>
+  <div align="center"> 
+     <img src="./App Screenshots/1.png" width="45%" alt="Desktop View"> 
+     <img src="./App Screenshots/2.png" width="45%" alt="Mobile View"> 
+     <img src="./App Screenshots/3.png" width="45%" alt="Search Results"> 
+     <img src="./App Screenshots/4.png" width="45%" alt="Movie Details">
+     <img src="./App Screenshots/5.png" width="90.5%" alt="Movie Details">
+     <img src="./App Screenshots/app_collage.png" width="90.5%  alt="Movie Details">
+     
+  </div>
 
 ## 🧩 Project Structure
   ```
@@ -54,10 +61,6 @@ A modern, responsive web application for discovering movies with beautiful UI an
   ├── index.html         # Main application entry point
   ├── styles.css         # Modern CSS with animations
   ├── app.js             # Core application logic
-  ├── assets/            # Images and screenshots
-  │   ├── desktop-view.png
-  │   ├── mobile-view.png
-  │   └── ...
   └── README.md          # Project documentation
   ```
 
@@ -68,12 +71,12 @@ A modern, responsive web application for discovering movies with beautiful UI an
 | GET /?s={query} | Search movies by title |
 | GET /?i={imdbID} | Get detailed movie info |
 
-  - Example API Call:
-    ```
-    fetch(`https://www.omdbapi.com/?s=inception&apikey=${API_KEY}`)
-    .then(response => response.json())
-    .then(data => console.log(data));
-    ```
+- Example API Call:
+ ```
+ fetch(`https://www.omdbapi.com/?s=inception&apikey=${API_KEY}`)
+ .then(response => response.json())
+ .then(data => console.log(data));
+ ```
 ## 🏆 Challenges Overcome
 
 | Challenge | Solution |
@@ -84,3 +87,25 @@ A modern, responsive web application for discovering movies with beautiful UI an
 | Modal UX | Multiple close methods (click, ESC, button) |
 
 ## 🔮 Future Roadmap
+- �  User authentication
+- 💾 Local storage for favorites
+- 🎥 YouTube trailer integration
+- 📊 Advanced analytics dashboard
+- 🌍 Multi-language support
+
+## 🤝 Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the project
+2. Create your feature branch (git checkout -b feature/AmazingFeature)
+3. Commit your changes (git commit -m 'Add some AmazingFeature')
+4. Push to the branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
+
+## Developer
+
+Developed by [Sunil Sowrirajan](https://www.linkedin.com/in/sunil-sowrirajan-40548826b/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?style=for-the-badge&logo=github)](https://github.com/suniltechs)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sunil-sowrirajan-40548826b/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Website-green?style=for-the-badge)](https://sunilsowrirajan.netlify.app/)
+
